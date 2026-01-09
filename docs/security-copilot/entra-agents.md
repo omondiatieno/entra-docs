@@ -58,19 +58,6 @@ Empower your reviewers to make fast and accurate access decisions. The [Access R
 | Role-based access   | Both [Identity Governance Administrator](../identity/role-based-access-control/permissions-reference.md#security-administrator) and [Lifecycle Workflows Administrator](../identity/role-based-access-control/permissions-reference.md#security-administrator) are required to configure and use the agent |
 | Trigger             | Runs every 24 hours or triggered manually |
 
-### Application Lifecycle Management Agent (Preview)
-
-The App Lifecycle Management Agent (Preview) helps you manage the full lifecycle of apps in Microsoft Entra, from discovery and onboarding to risk remediation and decommissioning. It correlates identity and network signals from Global Secure Access telemetry data to surface unmanaged private apps and Microsoft Entra application data. It provides clear, AI-driven recommendations to reduce app sprawl and enforce governance at scale. This agent is currently being deployed and might not be available in all tenants.
-
-| Attribute           | Description |
-|---------------------|------------ |
-| Identity            | A unique [agent identity](../agent-id/identity-professional/authorization-agent-id.md) for authorization is created when the agent is turned on.<br><br>The agent uses this identity to scan your tenant with specific **permissions** to review network logs and application data to provide insights and suggestions for application management. The agent identity includes **role-based access** used for any write actions, such as creating and disabling applications, dismissing suggestions, and sending emails or Teams notifications. |
-| Licenses            | [Microsoft Entra ID P2 or Workload Identity Premium P2](/entra/fundamentals/licensing) for **App Risk Remediation** suggestions and/or Microsoft Entra Suite or [Microsoft Entra Private Access](../global-secure-access/overview-what-is-global-secure-access.md#licensing-overview) licenses for **Application Discovery & Onboarding** suggestions |
-| Permissions         | Read access for Global Secure Access network logs.<br>Read access for users, applications, and service principals.<br>Read access for Microsoft Entra recommendations. |
-| Plugins             | [Microsoft Entra](/entra/fundamentals/copilot-security-entra) |
-| Products            | [Global Secure Access](../global-secure-access/overview-what-is-global-secure-access.md)<br>[Microsoft Entra recommendations](../identity/monitoring-health/overview-recommendations.md)<br>[Enterprise Applications](/entra/identity/enterprise-apps/)<br>[App Management](/entra/identity/enterprise-apps/) |
-| Role-based access   | Set up the agent and manage the agent:<br>[Cloud Application Administrator](../identity/role-based-access-control/permissions-reference.md#cloud-application-administrator)<br>[Application Administrator](../identity/role-based-access-control/permissions-reference.md#application-administrator)<br>[Global Secure Access Administrator](../identity/role-based-access-control/permissions-reference.md#global-secure-access-administrator)<br>[Security Administrator](../identity/role-based-access-control/permissions-reference.md#security-administrator)<br> View the output suggestions from the agent:<br>[Reports Reader](../identity/role-based-access-control/permissions-reference.md#reports-reader)<br>[Security Reader](../identity/role-based-access-control/permissions-reference.md#security-reader)<br>[Globl Reader](../identity/role-based-access-control/permissions-reference.md#global-reader) |
-
 ### Conditional Access Optimization Agent
 
 The [Conditional Access Optimization Agent](./conditional-access-agent-optimization.md) ensures comprehensive user protection by analyzing your Conditional Access policies and recommending improvements. The agent evaluates your current policy configuration against Microsoft best practices and Zero Trust principles.
